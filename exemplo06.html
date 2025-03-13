@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Operações Matemáticas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .result {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .result span {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Operações Matemáticas</h1>
+        <script>
+            var num1, num2, soma, subtracao, multiplicacao, divisao, resto, logaritimo
+            num1 = prompt("Informe o primeiro número:");
+            num2 = prompt("Informe o segundo número:");
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+
+            soma = num1 + num2;
+            subtracao = num1 - num2;
+            multiplicacao = num1 * num2;
+            divisao = num1 / num2;
+            resto = num1 % num2;
+            logaritmo = Math.log(num1) / Math.log(num2);
+
+            // Exibindo os resultados no documento
+            document.write(`<p class="result">A soma de <span>${num1}</span> e <span>${num2}</span> é: <span>${soma}</span></p>`);
+            document.write(`<p class="result">A subtração de <span>${num1}</span> e <span>${num2}</span> é: <span>${subtracao}</span></p>`);
+            document.write(`<p class="result">A multiplicação de <span>${num1}</span> e <span>${num2}</span> é: <span>${multiplicacao}</span></p>`);
+            document.write(`<p class="result">A divisão de <span>${num1}</span> e <span>${num2}</span> é: <span>${divisao}</span></p>`);
+            document.write(`<p class="result">O resto da divisão de <span>${num1}</span> e <span>${num2}</span> é: <span>${resto}</span></p>`);
+            document.write(`<p class="result">O logaritmo de <span>${num1}</span> na base <span>${num2}</span> é: <span>${logaritmo}</span></p>`);
+            console.log("Olá mundo no console");
+        </script>
+    </div>
+</body>
+</html>
